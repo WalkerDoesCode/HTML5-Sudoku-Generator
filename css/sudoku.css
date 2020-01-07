@@ -1,0 +1,250 @@
+
+/*
+Welcome to the CSS section of the code for this Create Task!
+
+This section formats the HTML page.
+*/
+
+
+/*
+  Color schemes from Material UI
+  https://material.io/color/#!/?view.left=0&view.right=0&primary.color=29B6F6
+*/
+
+/*This section formats the body including the background.*/
+body {
+    background-color:#73e8ff;
+    font-weight: 300;
+    font-family: sans-serif,arial;
+
+}
+/* This section formats the headings.*/
+h1 {
+    font-size: 100px;
+    font-family: sans-serif,arial;
+    margin-bottom: 10px;
+}
+/* This section formats buttons.*/
+button {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #0086c3;
+    color: #fff;
+}
+/* This section formats areas of input.*/
+input {
+    background-color: #29b6f6;
+}
+/* This section formats the div which contains all of the buttons for sudoku.*/
+#sudoku-controls {
+    margin-bottom: 20px;
+}
+/* This section formats items with the square class.*/
+.square {
+    width: 70px;
+    height: 70px;
+    border: thin solid gray;
+    font-size: 60px;
+    text-align: center;
+    vertical-align: middle;
+    Xpadding: 5px;
+    text-shadow : 0 0 0 #000;
+}
+/* This section formats items with the red class.*/
+.red {
+    background-color: #FAA;
+}
+/* This section formats items with the preset class.*/
+.preset {
+    background-color: blue;
+    color: white;
+}
+
+/* Anything after this comment adds the unique border to the grid which
+separates each of the 3x3 squares.*/
+#row-0-col-0 {
+  border-left: solid thick black;
+  border-top: solid thick black;
+}
+#row-0-col-1 {
+  border-top: solid thick black;
+}
+#row-0-col-2 {
+  border-top: solid thick black;
+  border-right: solid thick black;
+}
+#row-0-col-3 {
+  border-top: solid thick black;
+}
+#row-0-col-4 {
+  border-top: solid thick black;
+}
+#row-0-col-5 {
+  border-top: solid thick black;
+  border-right: solid thick black;
+}
+#row-0-col-6 {
+  border-top: solid thick black;
+}
+#row-0-col-7 {
+  border-top: solid thick black;
+}
+#row-0-col-8 {
+  border-top: solid thick black;
+  border-right: solid thick black;
+}
+#row-1-col-8 {
+  border-right: solid thick black;
+}
+#row-2-col-8 {
+  border-right: solid thick black;
+  border-bottom: solid thick black;
+}
+#row-3-col-8 {
+  border-right: solid thick black;
+}
+#row-4-col-8 {
+  border-right: solid thick black;
+}
+#row-5-col-8 {
+  border-right: solid thick black;
+  border-bottom: solid thick black;
+}
+#row-6-col-8 {
+  border-right: solid thick black;
+}
+#row-7-col-8 {
+  border-right: solid thick black;
+}
+#row-8-col-8 {
+  border-right: solid thick black;
+  border-bottom: solid thick black;
+}
+#row-8-col-7 {
+  border-bottom: solid thick black;
+}
+#row-8-col-6 {
+  border-bottom: solid thick black;
+}
+#row-8-col-5 {
+  border-bottom: solid thick black;
+  border-right: solid thick black;
+}
+#row-8-col-4 {
+  border-bottom: solid thick black;
+}
+#row-8-col-3 {
+  border-bottom: solid thick black;
+}
+#row-8-col-2 {
+  border-bottom: solid thick black;
+  border-right: solid thick black;
+}
+#row-8-col-1 {
+  border-bottom: solid thick black;
+}
+#row-8-col-0 {
+  border-left: solid thick black;
+  border-bottom: solid thick black;
+}
+#row-7-col-0 {
+  border-left: solid thick black;
+}
+#row-6-col-0 {
+  border-left: solid thick black;
+}
+#row-5-col-0 {
+  border-left: solid thick black;
+  border-bottom: solid thick black;
+}
+#row-4-col-0 {
+  border-left: solid thick black;
+}
+#row-3-col-0 {
+  border-left: solid thick black;
+}
+#row-2-col-0 {
+  border-left: solid thick black;
+  border-bottom: solid thick black;
+}
+#row-1-col-0 {
+  border-left: solid thick black;
+}
+#row-2-col-1 {
+  border-bottom: solid thick black;
+}
+#row-5-col-1 {
+  border-bottom: solid thick black;
+}
+#row-2-col-2 {
+  border-bottom: solid thick black;
+  border-right: solid thick black;
+}
+#row-5-col-2 {
+  border-bottom: solid thick black;
+  border-right: solid thick black;
+}
+#row-2-col-3 {
+  border-bottom: solid thick black;
+}
+#row-5-col-3 {
+  border-bottom: solid thick black;
+}
+#row-2-col-4 {
+  border-bottom: solid thick black;
+}
+#row-5-col-4 {
+  border-bottom: solid thick black;
+}
+#row-2-col-5 {
+  border-bottom: solid thick black;
+  border-right: solid thick black;
+}
+#row-5-col-5 {
+  border-bottom: solid thick black;
+  border-right: solid thick black;
+}
+#row-2-col-6 {
+  border-bottom: solid thick black;
+}
+#row-5-col-6 {
+  border-bottom: solid thick black;
+}
+#row-2-col-7 {
+  border-bottom: solid thick black;
+}
+#row-5-col-7 {
+  border-bottom: solid thick black;
+}
+#row-1-col-2 {
+  border-right: solid thick black;
+}
+#row-1-col-5 {
+  border-right: solid thick black;
+}
+#row-3-col-2 {
+  border-right: solid thick black;
+}
+#row-3-col-5 {
+  border-right: solid thick black;
+}
+#row-4-col-2 {
+  border-right: solid thick black;
+}
+#row-4-col-5 {
+  border-right: solid thick black;
+}
+#row-6-col-2 {
+  border-right: solid thick black;
+}
+#row-6-col-5 {
+  border-right: solid thick black;
+}
+#row-7-col-2 {
+  border-right: solid thick black;
+}
+#row-7-col-5 {
+  border-right: solid thick black;
+}

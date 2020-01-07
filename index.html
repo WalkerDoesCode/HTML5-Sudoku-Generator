@@ -1,0 +1,43 @@
+<!--
+Welcome to the HTML section of the code for this project!
+
+This section formats the web page which displays this game.
+-->
+
+
+<html>
+<!--
+This section creates the 'head' section by including links to jquery and then the CSS in
+order of importance.
+-->
+<head>
+    <title>Sudoku - CS Principles</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="css/sudoku.css">
+</head>
+<!--
+This section creates the 'body' section by defining all of the divs which contain the
+critical parts of this web page.
+-->
+<body>
+
+    <h1>Sudoku</h1>
+    <div id='sudoku-controls'><i class="fas fa-sync fa-spin"></i></div>
+    <div style='position:relative;'>
+
+      <div id='sudoku-grid' style="float: left; width: 640px"><i class="fas fa-sync fa-spin"></i></div>
+
+      <div id='sudoku-end-state' style='border: solid thin black; width: 700px; float:right; height:400px; overflow: auto; font-size: 20px; font-family: arial; padding: 5px;'>
+      </div>
+
+    </div>
+    <!--
+    This section finally links the Javascript from the two Javascript sections of this
+    project.
+    -->
+    <script src="js/generateSudoku.js"></script>
+    <script src="js/sudoku.js"></script>
+
+</body>
+</html>
